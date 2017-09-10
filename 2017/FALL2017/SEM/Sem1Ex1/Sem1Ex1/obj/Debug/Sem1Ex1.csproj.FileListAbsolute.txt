@@ -1,0 +1,7 @@
+D:\IT\Sem1Ex1\Sem1Ex1\bin\Debug\Sem1Ex1.exe.config
+D:\IT\Sem1Ex1\Sem1Ex1\bin\Debug\Sem1Ex1.exe
+D:\IT\Sem1Ex1\Sem1Ex1\bin\Debug\Sem1Ex1.pdb
+D:\IT\Sem1Ex1\Sem1Ex1\obj\Debug\Sem1Ex1.csprojResolveAssemblyReference.cache
+D:\IT\Sem1Ex1\Sem1Ex1\obj\Debug\Sem1Ex1.csproj.CoreCompileInputs.cache
+D:\IT\Sem1Ex1\Sem1Ex1\obj\Debug\Sem1Ex1.exe
+D:\IT\Sem1Ex1\Sem1Ex1\obj\Debug\Sem1Ex1.pdb
