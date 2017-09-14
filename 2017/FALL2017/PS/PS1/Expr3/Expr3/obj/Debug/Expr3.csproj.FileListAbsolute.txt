@@ -1,0 +1,7 @@
+D:\IT\Expr3\Expr3\bin\Debug\Expr3.exe.config
+D:\IT\Expr3\Expr3\bin\Debug\Expr3.exe
+D:\IT\Expr3\Expr3\bin\Debug\Expr3.pdb
+D:\IT\Expr3\Expr3\obj\Debug\Expr3.csprojResolveAssemblyReference.cache
+D:\IT\Expr3\Expr3\obj\Debug\Expr3.csproj.CoreCompileInputs.cache
+D:\IT\Expr3\Expr3\obj\Debug\Expr3.exe
+D:\IT\Expr3\Expr3\obj\Debug\Expr3.pdb
