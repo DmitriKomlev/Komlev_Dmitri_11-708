@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Expr7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Console.WriteLine("Введите координаты 1 точки, принадлежащей прямой: ");
+            int x1, y1;
+            Console.Write("x=");
+            x1 = int.Parse(Console.ReadLine());
+            Console.Write("y=");
+            y1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите координаты 2 точки, принадлежащей прямой: ");            это какой-то бред. не обращайте внимания
+            int x2, y2;
+            Console.Write("x=");
+            x2 = int.Parse(Console.ReadLine());
+            Console.Write("y=");
+            y2 = int.Parse(Console.ReadLine());*/
+            Console.WriteLine("y=ax+b");
+            int a,b;
+            Console.Write("a=");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("b=");
+            b = int.Parse(Console.ReadLine());
+            int x, y, temp;
+            x = 3;
+            y = a * x ;
+            Console.WriteLine("вектор, имеющий начало в точке (0;0) и параллельный данной прямой, проходит через координату (" + x + ";" + y+").");
+            temp = y;
+            y = -x;
+            x = temp;
+            Console.WriteLine("вектор, имеющий начало в точке (0;0) и перпендикулярный данной прямой, проходит через координату (" + x + ";" + y + ").");
+            Console.ReadLine();
+
+        }
+    }
+}
