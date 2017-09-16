@@ -10,18 +10,6 @@ namespace Expr7
     {
         static void Main(string[] args)
         {
-            /*Console.WriteLine("Введите координаты 1 точки, принадлежащей прямой: ");
-            int x1, y1;
-            Console.Write("x=");
-            x1 = int.Parse(Console.ReadLine());
-            Console.Write("y=");
-            y1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введите координаты 2 точки, принадлежащей прямой: ");            это какой-то бред. не обращайте внимания
-            int x2, y2;
-            Console.Write("x=");
-            x2 = int.Parse(Console.ReadLine());
-            Console.Write("y=");
-            y2 = int.Parse(Console.ReadLine());*/
             Console.WriteLine("y=ax+b");
             int a,b;
             Console.Write("a=");
