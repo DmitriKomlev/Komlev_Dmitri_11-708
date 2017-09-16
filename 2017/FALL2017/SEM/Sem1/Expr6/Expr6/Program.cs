@@ -23,7 +23,7 @@ namespace Expr6
             x2 = int.Parse(Console.ReadLine());
             Console.WriteLine("Y координата второй точки, принадлежащей прямой:");
             y2 = int.Parse(Console.ReadLine());
-            Console.WriteLine((Math.Abs((y2-y1)*x-(x2-x1)*y+x2*y1-y2*x1))/(Math.Sqrt(Math.Pow((y2-y1),2)+Math.Pow((x2-x1),2))));
+            Console.WriteLine((Math.Abs((y2-y1)*x-(x2-x1)*y+x2*y1-y2*x1))/(Math.Sqrt(Math.Pow((y2-y1),2)+Math.Pow((x2-x1),2)))); //формулу взял из википедии
             Console.ReadLine();
         }
     }
