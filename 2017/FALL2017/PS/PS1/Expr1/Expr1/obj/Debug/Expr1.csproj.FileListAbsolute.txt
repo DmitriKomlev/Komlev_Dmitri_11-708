@@ -1,7 +1,0 @@
-D:\IT\Expr1\Expr1\obj\Debug\Expr1.csprojResolveAssemblyReference.cache
-D:\IT\Expr1\Expr1\obj\Debug\Expr1.csproj.CoreCompileInputs.cache
-D:\IT\Expr1\Expr1\bin\Debug\Expr1.exe.config
-D:\IT\Expr1\Expr1\bin\Debug\Expr1.exe
-D:\IT\Expr1\Expr1\bin\Debug\Expr1.pdb
-D:\IT\Expr1\Expr1\obj\Debug\Expr1.exe
-D:\IT\Expr1\Expr1\obj\Debug\Expr1.pdb

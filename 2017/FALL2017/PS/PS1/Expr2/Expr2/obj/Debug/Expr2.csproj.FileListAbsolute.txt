@@ -1,7 +1,0 @@
-D:\IT\Expr2\Expr2\bin\Debug\Expr2.exe.config
-D:\IT\Expr2\Expr2\bin\Debug\Expr2.exe
-D:\IT\Expr2\Expr2\bin\Debug\Expr2.pdb
-D:\IT\Expr2\Expr2\obj\Debug\Expr2.csproj.CoreCompileInputs.cache
-D:\IT\Expr2\Expr2\obj\Debug\Expr2.exe
-D:\IT\Expr2\Expr2\obj\Debug\Expr2.pdb
-D:\IT\Expr2\Expr2\obj\Debug\Expr2.csprojResolveAssemblyReference.cache
