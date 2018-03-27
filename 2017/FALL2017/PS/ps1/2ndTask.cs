@@ -18,6 +18,7 @@ namespace Sem1Ex2
             }
             return temp;
         }
+	// быстрое возведение в степень работает не так
         static void Main(string[] args)
         {
             Console.Write("Enter foundation of degree: ");
@@ -26,7 +27,7 @@ namespace Sem1Ex2
             int exponent = int.Parse(Console.ReadLine());
             while( exponent %2 ==0)
             {
-                
+
                 foundation *= foundation;
                 exponent /= 2;
             }

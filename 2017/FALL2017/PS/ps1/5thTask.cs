@@ -23,6 +23,7 @@ namespace Sem1Ex5
                     if (tempNum % i == 0) k++;
                     if (k > 1) break;
                 }
+		// не количество, а сумма же
                 if (k + 1 == 2) k1++;
                 p++;
                 num = (Math.Pow(2, p - 1)) * (Math.Pow(2, p) - 1);

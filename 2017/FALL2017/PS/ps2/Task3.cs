@@ -64,6 +64,7 @@ namespace sem2ex5
             Random random = new Random();
             for (int i = 0; i <=n; i++)
             {
+				// ---check--- а почему в b? есть же естественное ограничение sin(x^2) < 1
                 double maxFunction = Function(b);
                 //рандом по Y
                 double randNumY = random.NextDouble() * maxFunction;
@@ -75,6 +76,8 @@ namespace sem2ex5
             return numOfDown/ n;
             
         }
+		
+		// ---check--- почему не сделали границы интервала параметрами?
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число отрезков/итераций n.");

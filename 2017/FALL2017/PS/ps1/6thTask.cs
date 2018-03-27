@@ -11,6 +11,12 @@ namespace Sem1Ex6_1
         //По заданному числу (от 1 до 10^12) найти его самый большой простой делитель
         public static bool IsNumSimple(long num)
         {
+	    // как-то изощернно, так не проще
+	    for (long i = 2; i <= num / 2; i++)
+            {
+                if (num % i == 0) return false;
+            }
+	    return true;
             //проверяем, является ли число простым
             int k = 0;
             for (long i = 1; i <= num / 2; i++)
