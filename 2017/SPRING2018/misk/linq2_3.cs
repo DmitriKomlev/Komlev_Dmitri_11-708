@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,13 +65,13 @@ namespace linq23
 
             var CommonlistGroupByCountry = commonList.GroupBy(p => p.productionCountry)
                         .Select(g => new { country = g.Key, count = g.Count(), minPrice = g.Select(a=>a).Min(a =>a.price)});
-
-            var productionGroupByCountry = CommonlistGroupByCountry.GroupBy(p => p.country)
+            // продукция, которая ксть в магазинах
+            var productionForSalling = CommonlistGroupByCountry.GroupBy(p => p.country)
                         .Select(g => new { country = g.Key, count = 0, minPrice = 0.0});
 
             var result = production.GroupBy(p => p.producingCountry)
                         .Select(g => new { country = g.Key, count = 0, minPrice = 0.0 })
-                        .Except(productionGroupByCountry)
+                        .Except(productionForSalling)
                         .Concat(CommonlistGroupByCountry)
                         .OrderBy(r => r.count)
                         .ThenBy(q => q.country); 
