@@ -14,50 +14,70 @@ namespace linq23
         public int itemID { get; set; }
 
     }
+
     class D
     {
         public int itemID { get; set; }
         public string storeName { get; set; }
         public double price { get; set; }
     }
-    class BD
-    {
-        public int itemID { get; set; }
-        public string storeName { get; set; }
-        public double price { get; set; }
-        public string country { get; set; }
-    }
+    
     class Program
     {
         static void Main(string[] args)
         {
-            List<B> production = new List<B>
-            {    
-                new B{ producingCountry = "China", category = "phone", itemID=1},
-                new B{ producingCountry = "China", category = "phone", itemID=2},
-                new B{ producingCountry = "China", category = "smartphone", itemID=3},
-                new B{ producingCountry = "USA", category = "smartphone", itemID=4},
-                new B{ producingCountry = "USA", category = "smartphone", itemID=5},
-                new B{ producingCountry = "USA", category = "smartphone", itemID=6},
-                new B{ producingCountry = "France", category = "smartphone", itemID=7},
-                new B{ producingCountry = "Russia", category = "smartphone", itemID=8},
-
-
-
-            };
-            List<D> sellers = new List<D>
+            //List<B> production = new List<B>
+            //{    
+            //    new B{ producingCountry = "China", category = "phone", itemID=1},
+            //    new B{ producingCountry = "China", category = "phone", itemID=2},
+            //    new B{ producingCountry = "China", category = "smartphone", itemID=3},
+            //    new B{ producingCountry = "USA", category = "smartphone", itemID=4},
+            //    new B{ producingCountry = "USA", category = "smartphone", itemID=5},
+            //    new B{ producingCountry = "USA", category = "smartphone", itemID=6},
+            //    new B{ producingCountry = "France", category = "smartphone", itemID=7},
+            //    new B{ producingCountry = "Russia", category = "smartphone", itemID=8},
+            //};
+            //List<D> sellers = new List<D>
+            //{
+            //    new D { itemID =1, storeName = "Aliexpress", price = 1000},
+            //    new D { itemID =1, storeName = "reseller", price = 1300},
+            //    new D { itemID =2, storeName = "Aliexpress", price = 30000},
+            //    new D { itemID =2, storeName = "resellser", price = 35000},
+            //    new D { itemID =3, storeName = "Aliexpress", price =7000},
+            //    new D { itemID =3, storeName = "resellser", price =9000},
+            //    new D { itemID =4, storeName = "re_Store", price = 20000},
+            //    new D { itemID =4, storeName = "Aliexpress", price = 11000},
+            //    new D { itemID =5, storeName = "re_Store", price = 70000}
+            //};
+            List<B> production = new List<B>();
+            List<D> sellers = new List<D>();
+            Console.Write("Enter count of production: ");
+            int k = int.Parse(Console.ReadLine());
+            Console.WriteLine("Country  Category  ItemID");
+            for(int i = 0; i<k; i++)
             {
-                new D { itemID =1, storeName = "Aliexpress", price = 1000},
-                new D { itemID =1, storeName = "reseller", price = 1300},
-                new D { itemID =2, storeName = "Aliexpress", price = 30000},
-                new D { itemID =2, storeName = "resellser", price = 35000},
-                new D { itemID =3, storeName = "Aliexpress", price =7000},
-                new D { itemID =3, storeName = "resellser", price =9000},
-                new D { itemID =4, storeName = "re_Store", price = 20000},
-                new D { itemID =4, storeName = "Aliexpress", price = 11000},
-                new D { itemID =5, storeName = "re_Store", price = 70000}
-            };
-
+                string str = Console.ReadLine();
+                string[] splitStr = str.Split(' ');
+                production.Add(new B { producingCountry = splitStr[0],
+                                       category =splitStr[1],
+                                       itemID = int.Parse(splitStr[2]) });
+            }
+            Console.WriteLine();
+            Console.Write("Enter count of sellers: ");
+            k = int.Parse(Console.ReadLine());
+            Console.WriteLine("ItemID  StoreName  Price");
+            for (int i = 0; i < k; i++)
+            {
+                string str = Console.ReadLine();
+                string[] splitStr = str.Split(' ');
+                sellers.Add(new D
+                {
+                    itemID = int.Parse(splitStr[0]),
+                    storeName = splitStr[1],
+                    price = double.Parse(splitStr[2])
+                });
+            }
+            Console.WriteLine();
             var commonList = production.Join(sellers,
                                   b => b.itemID,
                                   c => c.itemID,
